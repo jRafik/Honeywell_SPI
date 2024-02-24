@@ -6,6 +6,7 @@ class Honeywell_SPI {
 public:
 	Honeywell_SPI(byte SS_pin, float pressureConst, int pMin, int oMin, byte Sum);
 	void begin();
+	void begin_calibr();
 	void readSensor();
 	void readSensorSum();
 	float getPressure();
