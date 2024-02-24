@@ -12,6 +12,12 @@ void Honeywell_SPI::begin() {	//инициализация
 	SPI.begin();
 	pinMode(_SS_pin, OUTPUT);
 	digitalWrite(_SS_pin, HIGH);
+}
+
+void Honeywell_SPI::begin_calibr() {	//инициализация
+	SPI.begin();
+	pinMode(_SS_pin, OUTPUT);
+	digitalWrite(_SS_pin, HIGH);
 	calibration();
 }
 
